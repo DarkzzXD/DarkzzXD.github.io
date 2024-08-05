@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 20px;
-    min-height: 200vh; /* Ensure scrolling by setting min-height larger than viewport height */
+    min-height: 200vh;
     background: linear-gradient(180deg, #4b0082, #000000);
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,6 +9,7 @@ body {
     align-items: center;
     cursor: url('./images/cursor.png'), auto;
 }
+
 
 .topbar {
     position: fixed;
@@ -38,19 +39,19 @@ body {
 }
 
 .topbar-links {
-    display: none;
+    display: flex;
+    gap: 20px;
 }
 
 .hamburger-menu {
-    display: block;
+    display: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
     margin-right: 35px;
-	cursor: url('./images/cursor-link.png'), auto;
+    cursor: url('./images/cursor-link.png'), auto;
 }
 
-/* Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
@@ -72,7 +73,7 @@ body {
     cursor: pointer;
     font-size: 24px;
     margin-bottom: 20px;
-	cursor: url('./images/cursor-link.png'), auto;
+    cursor: url('./images/cursor-link.png'), auto;
 }
 
 .side-menu a {
@@ -217,4 +218,44 @@ a:hover {
     background-clip: text;
     text-decoration: none;
     cursor: url('./images/cursor-link.png'), auto;
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .topbar-logo, .hamburger-menu {
+        margin-bottom: 10px;
+    }
+
+    .topbar-links {
+        display: block;
+    }
+
+    .topbar-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .topbar-links {
+        display: flex
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .topbar-links {
+        display: none;
+    }
 }

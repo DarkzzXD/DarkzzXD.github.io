@@ -1,12 +1,13 @@
-function logCenteredText(text) {
+function log(text) {
     const consoleWidth = 80;
     const padding = Math.max(0, Math.floor((consoleWidth - text.length) / 2));
-    const paddedText = ' '.repeat(padding) + text + ' '.repeat(padding);
+    const paddedText = ''.repeat(padding) + text + ''.repeat(padding);
     console.log(`%c${paddedText}`, 'font-size: 16px; font-family: "Comic Sans MS", "Comic Sans", cursive;');
 }
 
-logCenteredText('          Oh hey!');
-logCenteredText('Watcha doing here bro?');
+
+log('Oh hey!');
+log('Watcha doing here bro?');
 
 function lerp(start, end, amt) {
     return (1 - amt) * start + amt * end;
@@ -60,7 +61,6 @@ function createDots() {
         const dot = document.createElement('div');
         dot.classList.add('dot');
         
-
         dot.style.top = `${Math.random() * (document.body.scrollHeight - margin * 2) + margin + 1}px`;
         dot.style.left = `${Math.random() * (document.body.scrollWidth - margin * 2) + margin}px`;
 
@@ -68,14 +68,12 @@ function createDots() {
         dots.push(dot);
     }
 
-
     function moveDots() {
         dots.forEach(dot => {
             const newX = Math.random() * (document.body.scrollWidth - margin * 2) + margin;
             const newY = Math.random() * (document.body.scrollHeight - margin * 2) + margin;
             animateDot(dot, newX, newY);
         });
-
 
         setTimeout(moveDots, 5000);
     }
