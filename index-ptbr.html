@@ -5,23 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site do Darkz</title>
     <link rel="stylesheet" href="styles.css">
-	<!--     <link rel="icon" href="https://avatars.githubusercontent.com/u/164411203?v=4&size=180" type="image/png"> -->
-    <link rel="icon" href=".\images\darkz-pfp.jpg" type="image/png">
+    <link rel="icon" href="./images/darkz-pfp.jpg" type="image/png" onmousedown="return false;"">
 </head>
 <body>
-    <div id="dots-container"></div> <!-- Add the dots container here -->
+    <div id="dots-container"></div>
+	
+	    <!-- Navigation Bar -->
+    <div class="topbar">
+        <div class="topbar-logo">
+            <img src="./images/darkz-pfp.jpg" alt="Logo" class="topbar-logo-img" onmousedown="return false;">
+            <span>Site do Darkz</span>
+        </div>
+        <div class="topbar-links">
+            <a href="index.html">English (US)</a>
+            <a href="./index-ptbr.html">Português Brasil</a>
+            <a href="./index-polish.html">Polskie</a>
+        </div>
+        <img src="./images/hamburger.png" alt="Menu" class="hamburger-menu" onclick="toggleMenu()" onmousedown="return false;">
+    </div>
+
+    <div class="side-menu" id="side-menu">
+        <span class="close-btn" onclick="toggleMenu()">&#10005;</span> <!-- Close button -->
+            <a href="index.html">English (US)</a>
+            <a href="./index-ptbr.html">Português Brasil</a>
+            <a href="./index-polish.html">Polskie</a>
+    </div>
+	
     <div class="card">
         <div class="text-container" id="text-container">
-            <!-- <img src="https://avatars.githubusercontent.com/u/164411203?v=4&size=180" alt="Profile Picture" class="profile-pic"> -->
-			<img src=".\images\darkz-pfp.jpg" alt="Profile Picture" class="a-profile-pic">
+			<img src=".\images\darkz-pfp.jpg" alt="Profile Picture" class="a-profile-pic" onmousedown="return false;">
             <h1>Darkz</h1>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
         </div>
     </div>
     <div class="additional-content">
         <!-- Additional content to ensure scrolling -->
         <p>Olá! Eu sou o <b>Darkz</b>!</p>
-        <p>Eu não sei por que eu fiz isso, só por diversão!</p> <!-- I don't really know why I made this, but you know, just for fun! -->
+        <p>Eu não sei por que eu fiz isso, só por diversão!</p>
         <br>
         <p>Sobre mim:</p>
         <p>Pronomes: <b>ele/dele</b></p>
@@ -31,14 +50,18 @@
         <p>Inglês (US)</p>
         <br>
         <p>Dá uma olhada nas minhas coisas!</p>
-        <p><img src="./images/discord-icon.jpg" alt="Discord Logo" class="profile-pic-rect">Discord: _darkzlol</p>
-        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect">Guilded: <a href="https://www.guilded.gg/u/ItzDarkzXD">/u/ItzDarkzXD</a></p>
-        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect">Guilded (ALT): <a href="https://www.guilded.gg/u/ItzDarkzXDAlt">/u/ItzDarkzXDAlt</a></p>
-        <p><img src="./images/github-icon.png" alt="GitHub Logo" class="profile-pic-rect-bg">GitHub: <a href="https://github.com/DarkzzXD">/DarkzzXD</a></p>
-        <p><img src="./images/roblox-icon.png" alt="Roblox Logo" class="profile-pic-rect-nrml">Roblox: <a href="https://www.roblox.com/users/4204670456/profile">Not_SKpA</a></p>
-        <p><img src="./images/steam-icon.png" alt="Steam Logo" class="profile-pic-rect">Perfil da Steam: <a href="https://steamcommunity.com/profiles/76561199640765075">NotDarkzXD</a></p><br><br>
-		<p><a href=".\index.html"><b>English Translation</b></a> • <a href=".\index-polish.html"><b>Polskie tłumaczenie</b></a></p>
+        <p><img src="./images/discord-icon.jpg" alt="Discord Logo" class="profile-pic-rect" onmousedown="return false;">Discord: _darkzlol</p>
+        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect" onmousedown="return false;">Guilded: <a href="https://www.guilded.gg/u/ItzDarkzXD">/u/ItzDarkzXD</a></p>
+        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect" onmousedown="return false;">Guilded (ALT): <a href="https://www.guilded.gg/u/ItzDarkzXDAlt" target="_blank">/u/ItzDarkzXDAlt</a></p>
+        <p><img src="./images/github-icon.png" alt="GitHub Logo" class="profile-pic-rect-bg" onmousedown="return false;">GitHub: <a href="https://github.com/DarkzzXD" target="_blank">/DarkzzXD</a></p>
+        <p><img src="./images/roblox-icon.png" alt="Roblox Logo" class="profile-pic-rect-nrml" onmousedown="return false;">Roblox: <a href="https://www.roblox.com/users/4204670456/profile" target="_blank">Not_SKpA</a></p>
+        <p><img src="./images/steam-icon.png" alt="Steam Logo" class="profile-pic-rect" onmousedown="return false;">Perfil da Steam: <a href="https://steamcommunity.com/profiles/76561199640765075" target="_blank">NotDarkzXD</a></p>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>

@@ -51,7 +51,6 @@ function animateGradient(timestamp) {
 
 requestAnimationFrame(animateGradient);
 
-
 function createDots() {
     const dotsContainer = document.getElementById('dots-container');
     const numDots = 30; // Number of dots
@@ -109,3 +108,16 @@ function animateDot(dot, newX, newY) {
     requestAnimationFrame(animationStep);
 }
 document.addEventListener('DOMContentLoaded', createDots);
+
+function toggleMenu() {
+    const sideMenu = document.getElementById('side-menu');
+    if (sideMenu.style.right === '0px') {
+        sideMenu.style.right = '-300px';
+    } else {
+        sideMenu.style.right = '0px';
+    }
+}
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
