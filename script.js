@@ -79,14 +79,14 @@ function createDots() {
         });
 
         // Repeat the movement
-        setTimeout(moveDots, 3000);
+        setTimeout(moveDots, 5000);
     }
 
     moveDots();
 }
 
 function animateDot(dot, newX, newY) {
-    const duration = 3000;
+    const duration = 5000;
     const startX = dot.offsetLeft;
     const startY = dot.offsetTop;
     const deltaX = newX - startX;
