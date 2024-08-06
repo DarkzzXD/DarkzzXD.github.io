@@ -259,3 +259,22 @@ a:hover {
         display: none;
     }
 }
+
+.side-menu button {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.side-menu button:hover {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+}
+
+span {
+    display: inline-block;
+    transition: transform 1s ease-in-out;
+}

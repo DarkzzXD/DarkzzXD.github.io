@@ -5,34 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darkz's Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./images/darkz-pfp.jpg" type="image/png" onmousedown="return false;">
+    <link rel="icon" href="./images/darkz-pfp.jpg" type="image/png">
 </head>
 <body>
     <div id="dots-container"></div>
 
     <div class="topbar">
         <div class="topbar-logo">
-            <img src="./images/darkz-pfp.jpg" alt="Logo" class="topbar-logo-img" onmousedown="return false;">
+            <img src="./images/darkz-pfp.jpg" alt="Logo" class="topbar-logo-img">
             <span>Darkz's Website</span>
         </div>
         <div class="topbar-links">
             <a href="index.html">English (US)</a>
             <a href="./index-ptbr.html">Português Brasil</a>
             <a href="./index-polish.html">Polskie</a>
+			<a href="#" onclick="toggleOptimization()"><i>Optimization</i></a>
         </div>
         <img src="./images/hamburger.png" alt="Menu" class="hamburger-menu" onclick="toggleMenu()" >
     </div>
 
     <div class="side-menu" id="side-menu">
         <span class="close-btn" onclick="toggleMenu()">&#10005;</span>
+			<p><b><i>-- -- Translations -- --</i></b></p>
             <a href="index.html">English (US)</a>
             <a href="./index-ptbr.html">Português Brasil</a>
             <a href="./index-polish.html">Polskie</a>
+			<br><br><p><b><i>-- -- Configurations -- --</i></b></p>
+			<a href="#" onclick="toggleOptimization()"><i>Optimization</i></a>
     </div>
 
     <div class="card">
         <div class="text-container" id="text-container">
-            <img src="./images/darkz-pfp.jpg" alt="Profile Picture" class="a-profile-pic" onmousedown="return false;">
+            <img src="./images/darkz-pfp.jpg" alt="Profile Picture" class="a-profile-pic">
             <h1>Darkz</h1>
         </div>
     </div>
@@ -49,18 +53,24 @@
         <p>English (US)</p>
         <br>
         <p>Check out my stuff!</p>
-        <p><img src="./images/discord-icon.jpg" alt="Discord Logo" class="profile-pic-rect" onmousedown="return false;">Discord: _darkzlol</p>
-        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect" onmousedown="return false;">Guilded: <a href="https://www.guilded.gg/u/ItzDarkzXD" target="_blank">/u/ItzDarkzXD</a></p>
-        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect" onmousedown="return false;">Guilded (ALT): <a href="https://www.guilded.gg/u/ItzDarkzXDAlt" target="_blank">/u/ItzDarkzXDAlt</a></p>
-        <p><img src="./images/github-icon.png" alt="GitHub Logo" class="profile-pic-rect-bg" onmousedown="return false;">GitHub: <a href="https://github.com/DarkzzXD" target="_blank">/DarkzzXD</a></p>
-        <p><img src="./images/roblox-icon.png" alt="Roblox Logo" class="profile-pic-rect-nrml" onmousedown="return false;">Roblox: <a href="https://www.roblox.com/users/4204670456/profile" target="_blank">Not_SKpA</a></p>
-        <p><img src="./images/steam-icon.png" alt="Steam Logo" class="profile-pic-rect" onmousedown="return false;">Steam Profile: <a href="https://steamcommunity.com/profiles/76561199640765075" target="_blank">NotDarkzXD</a></p>
+        <p><img src="./images/discord-icon.jpg" alt="Discord Logo" class="profile-pic-rect">Discord: _darkzlol</p>
+        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect">Guilded: <a href="https://www.guilded.gg/u/ItzDarkzXD" target="_blank">/u/ItzDarkzXD</a></p>
+        <p><img src="./images/guilded-icon.png" alt="Guilded Logo" class="profile-pic-rect">Guilded (ALT): <a href="https://www.guilded.gg/u/ItzDarkzXDAlt" target="_blank">/u/ItzDarkzXDAlt</a></p>
+        <p><img src="./images/github-icon.png" alt="GitHub Logo" class="profile-pic-rect-bg">GitHub: <a href="https://github.com/DarkzzXD" target="_blank">/DarkzzXD</a></p>
+        <p><img src="./images/roblox-icon.png" alt="Roblox Logo" class="profile-pic-rect-nrml">Roblox: <a href="https://www.roblox.com/users/4204670456/profile" target="_blank">Not_SKpA</a></p>
+        <p><img src="./images/steam-icon.png" alt="Steam Logo" class="profile-pic-rect">Steam Profile: <a href="https://steamcommunity.com/profiles/76561199640765075" target="_blank">NotDarkzXD</a></p>
     </div>
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    </script>
+	<script>
+	function log(text) {
+    const consoleWidth = 80;
+    const padding = Math.max(0, Math.floor((consoleWidth - text.length) / 2));
+    const paddedText = ''.repeat(padding) + text + ''.repeat(padding);
+    console.log(`%c${paddedText}`, 'font-size: 16px; font-family: "Comic Sans MS", "Comic Sans", cursive;');
+}
+
+log('Oh hey!');
+log('Watcha doing here bro?');
+</script>
 </body>
 </html>
