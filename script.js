@@ -1,4 +1,4 @@
-let TobyFoxEasterEggActivated = false;
+let cantInteractWithAnything = false;
 
 function lerp(start, end, amt) {
     return (1 - amt) * start + amt * end;
@@ -110,7 +110,7 @@ function toggleMenu() {
 }
 
 function toggleOptimization() {
-	const sound = new Audio('./sounds/ping.mp3');
+	const sound = new Audio('./sounds/UndertaleAssets/ping.mp3');
     const star = document.createElement('img');
     star.src = './images/star.png';
     star.style.position = 'fixed';
@@ -153,8 +153,8 @@ function hideScrollbars() {
 }
 
 function TobyFoxEasterEgg() {
-	if (TobyFoxEasterEggActivated === false) {
-		TobyFoxEasterEggActivated = true;
+	if (cantInteractWithAnything === false) {
+		cantInteractWithAnything = true;
     document.body.innerHTML = '';
 	hideScrollbars();
     const overlay = document.createElement('div');
@@ -170,7 +170,7 @@ function TobyFoxEasterEgg() {
     overlay.style.alignItems = 'center';
     overlay.style.zIndex = '1000';
     const image = document.createElement('img');
-    image.src = './images/tobyfox.gif';
+    image.src = './images/UndertaleAssets/tobyfox.gif';
     image.style.width = '110px';
     image.style.height = '100px';
     const textContainer = document.createElement('div');
@@ -182,7 +182,7 @@ function TobyFoxEasterEgg() {
     overlay.appendChild(image);
     overlay.appendChild(textContainer);
     document.body.appendChild(overlay);
-    const sound = new Audio('./sounds/tobyfox.ogg');
+    const sound = new Audio('./sounds/UndertaleAssets/tobyfox.ogg');
     sound.loop = true;
     sound.play();
 	}
