@@ -8,9 +8,13 @@ function sineInOut(t) {
     return -(Math.cos(Math.PI * t) - 1) / 2;
 }
 
-let startColor1 = [59, 0, 102];
+//let startColor1 = [59, 0, 102];
+//let startColor2 = [0, 0, 0];
+//let endColor1 = [179, 0, 255];
+//let endColor2 = [0, 0, 0];
+let startColor1 = [128,128,128];
 let startColor2 = [0, 0, 0];
-let endColor1 = [179, 0, 255];
+let endColor1 = [128,128,128];
 let endColor2 = [0, 0, 0];
 let duration = 5000;
 let startTime;
@@ -98,7 +102,7 @@ function animateDot(dot, newX, newY) {
 
     requestAnimationFrame(animationStep);
 }
-document.addEventListener('DOMContentLoaded', createDots);
+document.addEventListener('DOMContentLoaded', hideScrollbars);
 
 function toggleMenu() {
     const sideMenu = document.getElementById('side-menu');
