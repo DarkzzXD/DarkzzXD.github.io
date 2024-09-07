@@ -7,7 +7,7 @@ function lerp(start, end, amt) {
 function sineInOut(t) {
     return -(Math.cos(Math.PI * t) - 1) / 2;
 }
-
+//.....................................................................
 //let startColor1 = [59, 0, 102];
 //let startColor2 = [0, 0, 0];
 //let endColor1 = [179, 0, 255];
