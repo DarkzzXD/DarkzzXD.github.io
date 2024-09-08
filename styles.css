@@ -1,15 +1,16 @@
 body {
     margin: 0;
     padding: 20px;
-    min-height: 200vh;
+    min-height: 150vh;
     background: linear-gradient(180deg, #4b0082, #000000);
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: url('./images/cursor.png'), auto;
 }
-
+temp {
+cursor: url('./images/cursor.png'), auto;	
+}
 
 .topbar {
     position: fixed;
